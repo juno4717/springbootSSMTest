@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Insert title here</title>
+</head>
+<body>
+Hello Spring Boot!!!!
+<tr th:each="user : ${userList}">
+    <td th:text="${user.getUserName()}">账号</td><br>
+    <td th:text="${user.getPassword()}">密码</td><br>
+</tr>
+</body>
+</html>

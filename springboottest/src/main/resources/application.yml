@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/tiangou
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    servlet:
+      content-type: text/html
+
+mybatis:
+  mapper-locations: classpath:com/qf/springboot/springboottest/dao/daoImpl/*.xml
+  type-aliases-package: com.qf.springboot.springboottest.entity
+#thymeleaf start
+#thymeleaf end
+
+
